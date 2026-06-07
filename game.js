@@ -143,13 +143,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 		// Check for negative or zero amount
 		if (amount <= 0) {
-			alert('Please enter a positive bet amount.');
+			alert('请输入正数投注金额。');
 			return;
 		}
 
 		// Check for invalid amount (not a number)
 		if (isNaN(amount)) {
-			alert('Please enter a valid bet amount.');
+			alert('请输入有效的投注金额。');
 			return;
 		}
 
@@ -157,10 +157,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		bethorse = parseInt(document.getElementById('bethorse').value);
 
 		if (funds < amount){
-			alert('Not enough funds.');
+			alert('资金不足！');
 		}
 		else if (num_lap <= 0){
-			alert('Number of lap must be greater than 0.');
+			alert('比赛圈数必须大于0。');
 		}else{
 
 			/*Started the game*/
